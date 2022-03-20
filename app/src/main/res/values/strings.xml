@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Bujosa Calculator</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_3">3</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="_0">0</string>
+    <string name="subtraction_symbol">−</string>
+    <string name="multiply_symbol">×</string>
+    <string name="division_symbol">÷</string>
+    <string name="plus_minus_symbol">±</string>
+    <string name="percent_symbol">%</string>
+    <string name="sum_symbol">+</string>
+    <string name="point_symbol">.</string>
+    <string name="equal_symbol">=</string>
+    <string name="backspace"> </string>
+    <string name="_c">c</string>
+    <string name="textview">1589</string>
+    <string name="title">Get the combination</string>
+</resources>
