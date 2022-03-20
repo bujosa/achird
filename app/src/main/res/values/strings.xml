@@ -20,6 +20,7 @@
     <string name="equal_symbol">=</string>
     <string name="backspace"> </string>
     <string name="_c">c</string>
-    <string name="textview">1589</string>
+    <string name="textview">0</string>
+    <string name="random_number_view">1589</string>
     <string name="title">Get the combination</string>
 </resources>
