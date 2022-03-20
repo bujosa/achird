@@ -26,24 +26,27 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="62dp"
-        android:layout_marginStart="320dp"
+        android:layout_marginStart="360dp"
         android:layout_marginTop="43dp"
+        android:layout_marginBottom="10dp"
         android:text="@string/textview"
         android:textAlignment="textEnd"
         android:textSize="40sp"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/random_number"
-        app:layout_constraintVertical_bias="0.343" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/random_number"
         android:layout_width="261dp"
         android:layout_height="66dp"
         android:layout_marginStart="101dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginTop="144dp"
         android:layout_marginEnd="102dp"
-        android:text="@string/textview"
+        android:text="@string/random_number_view"
         android:textAlignment="center"
         android:textSize="44sp"
         android:textStyle="bold"
@@ -64,7 +67,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button16"
+                android:id="@+id/clearButton"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
@@ -78,7 +81,7 @@
                 tools:ignore="TextContrastCheck" />
 
             <Button
-                android:id="@+id/button17"
+                android:id="@+id/plusMinusButton"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
@@ -91,7 +94,7 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/button18"
+                android:id="@+id/percentButton"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
@@ -104,7 +107,7 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/button19"
+                android:id="@+id/divisionButton"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
@@ -122,7 +125,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/oneButton"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
@@ -135,7 +138,7 @@
                 tools:ignore="TextContrastCheck" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/twoButton"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
@@ -147,7 +150,7 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/threeButton"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
@@ -159,7 +162,7 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/button15"
+                android:id="@+id/multiplyButton"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
@@ -177,7 +180,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/fourButton"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
@@ -189,7 +192,7 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/button5"
+                android:id="@+id/fiveButton"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
@@ -201,7 +204,7 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/button6"
+                android:id="@+id/sixButton"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
@@ -213,7 +216,7 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/button14"
+                android:id="@+id/subtractionButton"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
@@ -231,7 +234,7 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button7"
+                android:id="@+id/sevenButton"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
@@ -243,7 +246,7 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/button8"
+                android:id="@+id/eightButton"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
@@ -255,7 +258,7 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/button9"
+                android:id="@+id/nineButton"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
@@ -267,7 +270,7 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/button13"
+                android:id="@+id/additionButton"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
@@ -286,7 +289,7 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/button10"
+                android:id="@+id/zeroButton"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
@@ -298,7 +301,7 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/button11"
+                android:id="@+id/pointButton"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
@@ -310,7 +313,7 @@
                 android:textSize="24sp" />
 
             <Button
-                android:id="@+id/button12"
+                android:id="@+id/equalButton"
                 style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="0dp"
                 android:layout_height="70dp"
@@ -325,14 +328,6 @@
         </TableRow>
 
     </TableLayout>
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="204dp"
-        android:layout_height="21dp"
-        tools:layout_editor_absoluteX="103dp"
-        tools:layout_editor_absoluteY="200dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
