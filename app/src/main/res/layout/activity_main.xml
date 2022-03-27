@@ -7,58 +7,25 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="29dp"
-        android:text="@string/title"
-        android:textColor="#FF9800"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/random_number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="62dp"
-        android:layout_marginStart="360dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="43dp"
-        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
         android:text="@string/textview"
         android:textAlignment="textEnd"
-        android:textSize="40sp"
+        android:textSize="80sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/tableLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/random_number"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <TextView
-        android:id="@+id/random_number"
-        android:layout_width="261dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="101dp"
-        android:layout_marginTop="144dp"
-        android:layout_marginEnd="102dp"
-        android:text="@string/random_number_view"
-        android:textAlignment="center"
-        android:textSize="44sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TableLayout
         android:id="@+id/tableLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
@@ -78,6 +45,7 @@
                 android:text="@string/_c"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp"
+                android:onClick="ButtonClick"
                 tools:ignore="TextContrastCheck" />
 
             <Button
@@ -91,7 +59,8 @@
                 android:backgroundTint="#676767"
                 android:text="@string/plus_minus_symbol"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:onClick="ButtonClick" />
 
             <Button
                 android:id="@+id/percentButton"
@@ -104,7 +73,8 @@
                 android:backgroundTint="#676767"
                 android:text="@string/percent_symbol"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:onClick="ButtonClick" />
 
             <Button
                 android:id="@+id/divisionButton"
@@ -117,7 +87,8 @@
                 android:backgroundTint="#FF9800"
                 android:text="@string/division_symbol"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:onClick="ButtonClick" />
         </TableRow>
 
         <TableRow
@@ -135,7 +106,8 @@
                 android:text="@string/_1"
                 android:textColor="#FFFFFF"
                 android:textSize="24sp"
-                tools:ignore="TextContrastCheck" />
+                tools:ignore="TextContrastCheck"
+                android:onClick="ButtonClick" />
 
             <Button
                 android:id="@+id/twoButton"
@@ -147,7 +119,8 @@
                 android:background="@drawable/circle"
                 android:text="@string/_2"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:onClick="ButtonClick" />
 
             <Button
                 android:id="@+id/threeButton"
@@ -159,7 +132,8 @@
                 android:background="@drawable/circle"
                 android:text="@string/_3"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:onClick="ButtonClick" />
 
             <Button
                 android:id="@+id/multiplyButton"
@@ -172,7 +146,8 @@
                 android:backgroundTint="#FF9800"
                 android:text="@string/multiply_symbol"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:onClick="ButtonClick" />
         </TableRow>
 
         <TableRow
@@ -189,7 +164,8 @@
                 android:background="@drawable/circle"
                 android:text="@string/_4"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:onClick="ButtonClick" />
 
             <Button
                 android:id="@+id/fiveButton"
@@ -201,7 +177,8 @@
                 android:background="@drawable/circle"
                 android:text="@string/_5"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:onClick="ButtonClick" />
 
             <Button
                 android:id="@+id/sixButton"
@@ -213,7 +190,8 @@
                 android:background="@drawable/circle"
                 android:text="@string/_6"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:onClick="ButtonClick" />
 
             <Button
                 android:id="@+id/subtractionButton"
@@ -226,7 +204,8 @@
                 android:backgroundTint="#FF9800"
                 android:text="@string/subtraction_symbol"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:onClick="ButtonClick" />
         </TableRow>
 
         <TableRow
@@ -243,7 +222,8 @@
                 android:background="@drawable/circle"
                 android:text="@string/_7"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:onClick="ButtonClick" />
 
             <Button
                 android:id="@+id/eightButton"
@@ -255,7 +235,8 @@
                 android:background="@drawable/circle"
                 android:text="@string/_8"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:onClick="ButtonClick" />
 
             <Button
                 android:id="@+id/nineButton"
@@ -267,7 +248,8 @@
                 android:background="@drawable/circle"
                 android:text="@string/_9"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:onClick="ButtonClick" />
 
             <Button
                 android:id="@+id/additionButton"
@@ -280,7 +262,8 @@
                 android:backgroundTint="#FF9800"
                 android:text="@string/sum_symbol"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:onClick="ButtonClick" />
         </TableRow>
 
         <TableRow
@@ -298,7 +281,8 @@
                 android:background="@drawable/circle"
                 android:text="@string/_0"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:onClick="ButtonClick" />
 
             <Button
                 android:id="@+id/pointButton"
@@ -310,7 +294,8 @@
                 android:background="@drawable/circle"
                 android:text="@string/point_symbol"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:onClick="ButtonClick" />
 
             <Button
                 android:id="@+id/equalButton"
@@ -323,7 +308,8 @@
                 android:backgroundTint="#FF9800"
                 android:text="@string/equal_symbol"
                 android:textColor="#FFFFFF"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:onClick="ButtonClick" />
 
         </TableRow>
 
