@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView Textview;
     private Button C, Add, Mul, Div, Sub, One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Zero, Point;
     private String input, lastOperation;
+    private Boolean dot = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
         switch (data){
             case "c":
+                dot = true;
                 input="0";
                 break;
             case "×":
@@ -57,9 +59,13 @@ public class MainActivity extends AppCompatActivity {
             case "−":
                 checkOperation(data);
                 lastOperation = data;
+                dot = true;
                 break;
             case ".":
-                input+=".";
+                if(dot) {
+                    input+=".";
+                    dot = false;
+                }
                 break;
             case "±":
                 PlusMinus();
@@ -81,13 +87,12 @@ public class MainActivity extends AppCompatActivity {
         Textview.setText(input);
     }
 
-    @SuppressLint("DefaultLocale")
     private void Solve(){
         if(input.split("×").length==2){
             String[] value = input.split("×");
            try{
                double mul = Double.parseDouble(value[0])*Double.parseDouble(value[1]);
-               input = "" + String.format("%.2f", mul);
+               input = "" + formatInput(mul);
            }
            catch (Exception ignored){}
         }
@@ -95,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
             String[] value = input.split("÷");
             try{
                 double div = Double.parseDouble(value[0]) / Double.parseDouble(value[1]);
-                input = "" + String.format("%.2f", div);
+                input = "" + formatInput(div);
             }
             catch (Exception ignored){}
         }
@@ -103,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
             String[] value=input.split("\\+");
             try{
                 double add = Double.parseDouble(value[0]) + Double.parseDouble(value[1]);
-                input = "" + String.format("%.2f", add);
+                input = "" + formatInput(add);
             }
             catch (Exception ignored){}
         }
@@ -114,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
             }
             try{
                 double sub = Double.parseDouble(value[0]) - Double.parseDouble(value[1]);
-                input = "" + String.format("%.2f", sub);
+                input = "" + formatInput(sub);
             }
             catch (Exception ignored){}
         }
@@ -128,7 +133,6 @@ public class MainActivity extends AppCompatActivity {
         Textview.setText(input);
     }
 
-    @SuppressLint("DefaultLocale")
     private void Percentage(){
         if(lastOperation != null){
             String lastElement = getLastElement();
@@ -142,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
                     Solve();
                     try{
                         double div = Double.parseDouble(input) / 100;
-                        input = "" + String.format("%.2f", div);
+                        input = "" + formatInput(div);
                     }
                     catch (Exception ignored){}
                     Textview.setText(input);
@@ -180,7 +184,17 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    private String formatInput(double value){
+        @SuppressLint("DefaultLocale") String result = "" + String.format("%.2f", value);
+        if(result.split("\\.")[1].equals("00")) {
+            result = result.split("\\.")[0];
+            dot = true;
+        }
+        return result;
+    }
+
     private String getLastElement(){
         return input.charAt(input.length() - 1) + "";
     }
+
 }
